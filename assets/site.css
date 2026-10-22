@@ -10,7 +10,9 @@ img{max-width:100%;height:auto}
 .skip{position:absolute;top:-100px;left:16px;background:var(--white);padding:12px;z-index:5}
 .skip:focus{top:12px}
 .site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:28px;border-bottom:1px solid var(--line)}
-.brand{color:var(--ink);font-size:25px;font-weight:750;letter-spacing:-1px;text-decoration:none;white-space:nowrap}
+.brand{color:#101e47;font-size:25px;font-weight:750;letter-spacing:-1px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:10px}
+.brand-icon{display:block;position:relative;width:38px;height:50px;overflow:hidden;flex:none;mix-blend-mode:multiply}
+.brand-icon img{position:absolute;width:74px;height:74px;max-width:none;left:-21px;top:-8px}
 .brand-dot{color:#a05b31}
 nav{display:flex;gap:28px;flex-wrap:wrap}
 nav a{font-size:14px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
@@ -29,6 +31,9 @@ h1{font-size:clamp(36px,5.4vw,64px);line-height:1.38;letter-spacing:-.035em;marg
 .nail-wordmark{font-family:Georgia,"Times New Roman",serif;font-size:70px;line-height:.98;letter-spacing:-3px}
 .nail-wordmark span{color:#a48099}
 .nail-caption{font-size:12px;letter-spacing:.18em;margin-top:20px}
+.nail-icon-visual{align-items:center;justify-content:center;background:#f6e6e8;padding:28px}
+.nail-icon-visual img{width:222px;height:222px;border-radius:24px;object-fit:contain}
+.nail-status{background:#fff6f5;color:#7f4e55}
 .puzzle-visual{background:#f2dfba}
 .puzzle-visual img{width:222px;height:222px;object-fit:cover;border-radius:24px}
 .status{position:absolute;right:18px;bottom:16px;font-size:12px;color:#53462f;background:#fff7e8;padding:3px 12px;border-radius:20px}
@@ -60,6 +65,21 @@ h1{font-size:clamp(36px,5.4vw,64px);line-height:1.38;letter-spacing:-.035em;marg
 .detail-copy ul{padding-left:1.4em;margin:0 0 18px}
 .detail-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:32px}
 .nail-detail-banner{border-radius:16px;min-height:220px;padding-block:36px}
+.nail-intro{display:flex;gap:38px;align-items:center;max-width:none;padding-bottom:48px}
+.nail-detail-icon{width:164px;height:164px;flex:none;border-radius:32px}
+.nail-intro .lead{margin-top:18px}
+.nail-intro .detail-actions{margin-top:24px;gap:16px}
+.store-note{color:var(--muted);font-size:13px}
+.nail-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;border-block:1px solid var(--line);padding-block:32px}
+.feature-number{font-size:12px;letter-spacing:.1em;color:#93685f}
+.nail-features h2{font-size:20px;line-height:1.65;margin:10px 0 14px}
+.nail-features p{font-size:14px;color:var(--muted);margin:0}
+.nail-screens{padding-top:44px}
+.screenshot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.screenshot-grid figure{margin:0;min-width:0}
+.screenshot-grid img{display:block;width:100%;border-radius:12px;border:1px solid var(--line);background:#f9f4ec}
+.screenshot-grid figcaption{font-size:14px;margin-top:12px;color:var(--muted)}
+.detail-copy .content-source{font-size:13px;color:var(--muted);margin-top:24px}
 .policy{max-width:780px;margin-inline:auto;padding-block:44px}
 .policy h1{font-size:34px;line-height:1.5}
 .policy .policy-app{font-weight:600;margin-bottom:6px}
@@ -70,3 +90,5 @@ h1{font-size:clamp(36px,5.4vw,64px);line-height:1.38;letter-spacing:-.035em;marg
 .policy .policy-scope{border-left:3px solid #9d8051;padding:8px 0 8px 18px;margin:24px 0;color:var(--muted);font-size:14px}
 @media(max-width:700px){.container{width:calc(100% - 40px)}.site-header{padding-block:20px;gap:16px}.brand{font-size:23px}nav{gap:16px}nav a{font-size:12px}.intro{padding-block:48px 44px}.lead{font-size:15px}.desktop-break{display:none}.app-grid{grid-template-columns:1fr;gap:24px}.app-visual{min-height:250px}.app-copy{padding:24px}.support{margin-top:48px;padding-block:32px;align-items:flex-start;flex-direction:column;gap:22px}.site-footer{flex-direction:column;gap:6px;padding-bottom:28px}.detail-intro{padding-top:32px}.detail-copy p,.detail-copy li,.policy p,.policy li{font-size:15px}.policy{padding-top:32px}.policy h1{font-size:28px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:700px){.nail-intro{gap:22px;align-items:flex-start}.nail-detail-icon{width:88px;height:88px;border-radius:18px}.nail-intro h1{font-size:30px}.nail-features{grid-template-columns:1fr;gap:26px}.nail-features h2{margin:4px 0 8px}.screenshot-grid{gap:16px}.screenshot-grid figcaption{font-size:12px}}
+@media(max-width:480px){.site-header{flex-wrap:wrap;gap:8px;padding-block:14px}.site-header nav{width:100%;gap:24px}.brand{font-size:24px}.nail-intro{flex-direction:column;gap:20px}.nail-intro .lead br{display:none}.screenshot-grid{grid-template-columns:1fr;gap:28px}.screenshot-grid figure{width:min(100%,320px);margin-inline:auto}.screenshot-grid figcaption{font-size:14px}.nail-detail-icon{width:96px;height:96px}}
