@@ -13,6 +13,8 @@ GitHub Pagesで配信する、依存ライブラリー・ビルド工程のな�
 
 ## 更新
 
+ファビコン（favicon.ico / favicon-32.png）とiPhone用apple-touch-icon.pngを共通設定。OGP画像はassets/og-compiseed-v1.png、og-nail-study-v1.png、og-wooden-puzzle-v1.pngの3種類（1200×630px）で、各ページのタイトル・説明・絶対URLに対応させています。各アプリのポリシーページにも同アプリの共有画像を指定し、本文は維持しています。共有画像を差し替えるときは画像名の版を進め、SNS側のキャッシュと区別してください。
+
 ロゴは利用者選択のC案を採用：マークのみ70％に縮小し、各画面幅の既存の社名文字サイズを維持。assets/brand.jsで文字の実描画下端と、元画像のひし形の先端を合わせています。共通ヘッダーのある4ページで共有します。
 
 2026年10月22日、利用者提供のCompiSeedロゴをヘッダーに追加。Nail Studyの紹介文は日本語のGoogle Play掲載内容を確認して要約し、公式アイコン、掲載スクリーンショット3枚、ストアリンクを追加しています。出典：https://play.google.com/store/apps/details?id=jp.compiseed.nailstudy&hl=ja&gl=JP 。掲載内容が変わった場合は分野数・問題数・機能を再確認してください。ロゴの原画像はassets/compiseed-logo.jpgとして保持し、ヘッダーではCSSでシンボル部分を表示しています。
